@@ -76,5 +76,5 @@ public class CategoriaRestController {
         response.put("categoria", nuevo);
         return  new ResponseEntity<Map<String, Object>>(response, HttpStatus.CREATED);
     }
-    
+
 }
