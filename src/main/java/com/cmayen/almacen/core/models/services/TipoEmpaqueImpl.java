@@ -41,4 +41,9 @@ public class TipoEmpaqueImpl implements  ITipoEmpaqueService{
     public void delete(TipoEmpaque tipoEmpaque) {
         this.tipoEmpaqueDao.delete(tipoEmpaque);
     }
+
+    @Override
+    public void delete(Long id) {
+        this.tipoEmpaqueDao.deleteById(id);
+    }
 }

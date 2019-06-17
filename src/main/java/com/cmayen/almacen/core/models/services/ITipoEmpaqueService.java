@@ -13,4 +13,5 @@ public interface ITipoEmpaqueService {
     public TipoEmpaque save(TipoEmpaque tipoEmpaque);
     public TipoEmpaque findById(Long id);
     public void delete (TipoEmpaque tipoEmpaque);
+    public void delete (Long id);
 }
