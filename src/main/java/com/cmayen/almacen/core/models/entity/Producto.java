@@ -1,5 +1,6 @@
 package com.cmayen.almacen.core.models.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,6 +9,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Table(name = "producto")
@@ -53,5 +55,17 @@ public class Producto implements Serializable {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "codigo_empaque")
     private  TipoEmpaque tipoEmpaque;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "producto", fetch = FetchType.LAZY)
+    private List<DetalleFactura> detalleFacturas;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "producto", fetch = FetchType.LAZY)
+    private List<Inventario> inventarioProductos;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "producto", fetch = FetchType.LAZY)
+    private List<DetalleCompra> detalleCompras;
 
 }

@@ -1,5 +1,6 @@
 package com.cmayen.almacen.core.models.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,6 +8,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Table(name = "proveedor")
@@ -38,4 +40,16 @@ public class Proveedor implements Serializable {
     @NotEmpty(message = "Debe ingresar un contacto principal")
     @Column(name = "contacto_principal")
     private  String contactoPrincipal;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "proveedor", fetch = FetchType.LAZY)
+    private List<TelefonoProveedor> telefonoProveedores;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "proveedor", fetch = FetchType.LAZY)
+    private List<EmailProveedor> emailProveedores;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "proveedor", fetch = FetchType.LAZY)
+    private List<Compra> compraProveedores;
 }
