@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/v1")
-@Api(tags = "caategorias")
+@Api(tags = "categorias")
 public class CategoriaRestController {
 
     private final ICategoriaService categoriaService;

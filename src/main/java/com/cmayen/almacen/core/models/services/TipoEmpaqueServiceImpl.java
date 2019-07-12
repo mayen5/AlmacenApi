@@ -9,11 +9,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class TipoEmpaqueImpl implements  ITipoEmpaqueService{
+public class TipoEmpaqueServiceImpl implements  ITipoEmpaqueService{
 
     private final ITipoEmpaqueDao tipoEmpaqueDao;
 
-    public TipoEmpaqueImpl(ITipoEmpaqueDao tipoEmpaqueDao){
+    public TipoEmpaqueServiceImpl(ITipoEmpaqueDao tipoEmpaqueDao){
         this.tipoEmpaqueDao = tipoEmpaqueDao;
     }
 
