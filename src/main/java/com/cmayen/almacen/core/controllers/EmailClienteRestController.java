@@ -1,8 +1,7 @@
 package com.cmayen.almacen.core.controllers;
 
-
-import com.cmayen.almacen.core.models.entity.TipoEmpaque;
-import com.cmayen.almacen.core.models.services.ITipoEmpaqueService;
+import com.cmayen.almacen.core.models.entity.EmailCliente;
+import com.cmayen.almacen.core.models.services.IEmailClienteService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -24,52 +23,52 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/v1")
-@Api(tags = "tiposempaque")
-public class TipoEmpaqueRestController {
+@Api(tags = "emailclientes")
+public class EmailClienteRestController {
 
-    private final ITipoEmpaqueService tipoEmpaqueService;
+    private final IEmailClienteService emailClienteService;
 
-    public TipoEmpaqueRestController(ITipoEmpaqueService tipoEmpaqueService){
-        this.tipoEmpaqueService = tipoEmpaqueService;
+    public EmailClienteRestController(IEmailClienteService emailClienteService){
+        this.emailClienteService = emailClienteService;
     }
 
-    @ApiOperation(value = "Listar Tipos Empaques", notes = "Servicio para listar los tipos de empaques")
-    @ApiResponses(value = {@ApiResponse(code = 200, message = "Lista de tipos de empaques")})
-    @GetMapping("tiposempaque")
-    public List<TipoEmpaque> index() {
-        return this.tipoEmpaqueService.findAll();
+    @ApiOperation(value = "Listar Email Clientes", notes = "Servicio para listar los email Clientes")
+    @ApiResponses(value = {@ApiResponse(code = 200, message = "Lista de email Clientes")})
+    @GetMapping("/emailclientes")
+    public List<EmailCliente> index() {
+        return this.emailClienteService.findAll();
     }
 
-    @ApiOperation(value = "Paginar listado de Tipos de Empaques", notes = "Servicio para listar los tipos de Empaques paginados")
-    @ApiResponses(value = {@ApiResponse(code = 200, message = "Lista de tipos de Empaques paginados")})
-    @GetMapping("tiposempaque/page/{page}")
-    public Page<TipoEmpaque> index(@PathVariable Integer page){
+    @ApiOperation(value = "Paginar listado de Email Clientes", notes = "Servicio para listar los email Clientes paginados")
+    @ApiResponses(value = {@ApiResponse(code = 200, message = "Lista de email Clientes paginados")})
+    @GetMapping("/emailclientes/page/{page}")
+    public Page<EmailCliente> index(@PathVariable Integer page){
         Pageable pageable = PageRequest.of(page, 5);
-        return tipoEmpaqueService.findAll(pageable);
+        return emailClienteService.findAll(pageable);
     }
 
-    @ApiOperation(value = "Buscar tipos de Empaque por Id", notes = "Servicio para buscar tipos de Empaque por codigo")
-    @ApiResponses(value = {@ApiResponse(code = 200, message = "Tipo de Empaque encontrado"),
-            @ApiResponse(code = 404, message = "Tipo de Empaque no encontrado")})
-    @GetMapping("tiposempaque/{id}")
+    @ApiOperation(value = "Buscar email Cliente por Id", notes = "Servicio para buscar email Cliente por codigo")
+    @ApiResponses(value = {@ApiResponse(code = 200, message = "Email Cliente encontrado"),
+            @ApiResponse(code = 404, message = "Email Cliente no encontrado")})
+    @GetMapping("/emailclientes/{id}")
     public ResponseEntity<?> show(@PathVariable Long id){
         Map<String, Object> response = new HashMap<>();
-        TipoEmpaque tipoEmpaqueEncontrada = this.tipoEmpaqueService.findById(id);
-        if (tipoEmpaqueEncontrada == null){
-            response.put("mensaje", "Tipo de Empaque no encontrado");
+        EmailCliente emailClienteEncontrada = this.emailClienteService.findById(id);
+        if (emailClienteEncontrada == null){
+            response.put("mensaje", "Email Cliente no encontrado");
             return  new ResponseEntity<Map<String, Object>>(response, HttpStatus.NOT_FOUND);
         }
 
-        return  new ResponseEntity<TipoEmpaque>(tipoEmpaqueEncontrada, HttpStatus.OK);
+        return  new ResponseEntity<EmailCliente>(emailClienteEncontrada, HttpStatus.OK);
     }
 
-    @ApiOperation(value = "Crear Tipo de Empaque", notes = "Servicio para crear un tipo de Empaque")
-    @ApiResponses(value = {@ApiResponse(code = 201, message = "Tipo de Empaque creado"),
+    @ApiOperation(value = "Crear Email Cliente", notes = "Servicio para crear un email Cliente")
+    @ApiResponses(value = {@ApiResponse(code = 201, message = "Email Cliente creado"),
             @ApiResponse(code = 400, message = "Existen errores en el ingreso de datos"),
-            @ApiResponse(code = 500, message = "Error en el servidor al crear tipoEmpaque")})
-    @PostMapping("tiposempaque")
-    public ResponseEntity<?> create (@Valid @RequestBody TipoEmpaque elemento, BindingResult result){
-        TipoEmpaque nuevo = null;
+            @ApiResponse(code = 500, message = "Error en el servidor al crear email Cliente")})
+    @PostMapping("/emailclientes")
+    public ResponseEntity<?> create (@Valid @RequestBody EmailCliente elemento, BindingResult result){
+        EmailCliente nuevo = null;
         Map<String, Object> response = new HashMap<>();
         if (result.hasErrors()){
             List<String> errors = result.getFieldErrors()
@@ -81,24 +80,24 @@ public class TipoEmpaqueRestController {
         }
 
         try {
-            nuevo = this.tipoEmpaqueService.save(elemento);
+            nuevo = this.emailClienteService.save(elemento);
         }catch (DataAccessException e){
             response.put("mensaje", "Error al realizar el insert en la base de datos");
             response.put("error", e.getMessage().concat(": ".concat(e.getMostSpecificCause().getMessage())));
             return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
-        response.put("mensaje","El tipo Empaque ha sido creado con éxito");
-        response.put("tipoEmpaque", nuevo);
+        response.put("mensaje","El email Cliente ha sido creado con éxito");
+        response.put("emailcliente", nuevo);
         return  new ResponseEntity<Map<String, Object>>(response, HttpStatus.CREATED);
     }
 
-    @PutMapping("tiposempaque/{id}")
-    public  ResponseEntity<?> update (@Valid @RequestBody TipoEmpaque tipoEmpaque, BindingResult result, @PathVariable Long id){
+    @PutMapping("/emailclientes/{id}")
+    public  ResponseEntity<?> update (@Valid @RequestBody EmailCliente emailCliente, BindingResult result, @PathVariable Long id){
 
         Map<String, Object> response = new HashMap<>();
-        TipoEmpaque update = this.tipoEmpaqueService.findById(id);
-        TipoEmpaque tipoEmpaqueUpdate = null;
+        EmailCliente update = this.emailClienteService.findById(id);
+        EmailCliente emailClienteUpdate = null;
 
         if (result.hasErrors()){
             List<String> errors = result.getFieldErrors()
@@ -110,38 +109,39 @@ public class TipoEmpaqueRestController {
         }
 
         if (update == null){
-            response.put("mensaje", "Error: no se puede editar el tipo de Empaque ID "
+            response.put("mensaje", "Error: no se puede editar el email Cliente ID "
                     + id.toString()
                     + " no existe en la base de datos");
             return new ResponseEntity<Map<String, Object>>(response, HttpStatus.NOT_FOUND);
         }
 
         try {
-            update.setDescripcion(tipoEmpaque.getDescripcion());
-            tipoEmpaqueUpdate = this.tipoEmpaqueService.save(tipoEmpaque);
+            update.setEmail(emailCliente.getEmail());
+            update.setCliente(emailCliente.getCliente());
+            emailClienteUpdate = this.emailClienteService.save(emailCliente);
         }catch (DataAccessException e){
             response.put("mensaje", "Error al actualizar los datos");
             response.put("error", e.getMessage().concat(": ".concat(e.getMostSpecificCause().getMessage())));
             return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
-        response.put("mensaje","El tipo de Empaque ha sido actualizado correctamente!!!");
-        response.put("tipoEmpaque", tipoEmpaqueUpdate);
+        response.put("mensaje","El email Cliente ha sido actualizado correctamente!!!");
+        response.put("emailcliente", emailClienteUpdate);
         return  new ResponseEntity<Map<String, Object>>(response, HttpStatus.CREATED);
     }
 
-    @DeleteMapping("tipoempaques/{id}")
+    @DeleteMapping("emailclientes/{id}")
     public ResponseEntity<?> delete (@PathVariable Long id){
         Map<String, Object> response = new HashMap<>();
         try{
-            this.tipoEmpaqueService.delete(id);
+            this.emailClienteService.delete(id);
         }catch (DataAccessException e){
-            response.put("mensaje", "Error al eliminar el tipo de Empaque en la base datos");
+            response.put("mensaje", "Error al eliminar el email Cliente en la base datos");
             response.put("error", e.getMessage().concat(": ".concat(e.getMostSpecificCause().getMessage())));
             return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
-        response.put("mensaje","El tipo de Empaque ha sido eliminado correctamente!!!");
+        response.put("mensaje","El email Cliente ha sido eliminado correctamente!!!");
         return  new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
     }
 }
