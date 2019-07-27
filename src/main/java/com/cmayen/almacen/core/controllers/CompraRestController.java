@@ -120,7 +120,7 @@ public class CompraRestController {
             update.setProveedor(compra.getProveedor());
             update.setFecha(compra.getFecha());
             update.setTotal(compra.getTotal());
-            compraUpdate = this.compraService.save(compra);
+            compraUpdate = this.compraService.save(update);
         }catch (DataAccessException e){
             response.put("mensaje", "Error al actualizar los datos");
             response.put("error", e.getMessage().concat(": ".concat(e.getMostSpecificCause().getMessage())));

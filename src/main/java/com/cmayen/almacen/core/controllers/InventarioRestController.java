@@ -122,7 +122,7 @@ public class InventarioRestController {
             update.setPrecio(inventario.getPrecio());
             update.setEntrada(inventario.getEntrada());
             update.setSalida(inventario.getSalida());
-            inventarioUpdate = this.inventarioService.save(inventario);
+            inventarioUpdate = this.inventarioService.save(update);
         }catch (DataAccessException e){
             response.put("mensaje", "Error al actualizar los datos");
             response.put("error", e.getMessage().concat(": ".concat(e.getMostSpecificCause().getMessage())));

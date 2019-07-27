@@ -119,7 +119,7 @@ public class TelefonoProveedorRestController {
             update.setNumero(telefonoProveedor.getNumero());
             update.setDescripcion(telefonoProveedor.getDescripcion());
             update.setProveedor(telefonoProveedor.getProveedor());
-            telefonoProveedorUpdate = this.telefonoProveedorService.save(telefonoProveedor);
+            telefonoProveedorUpdate = this.telefonoProveedorService.save(update);
         }catch (DataAccessException e){
             response.put("mensaje", "Error al actualizar los datos");
             response.put("error", e.getMessage().concat(": ".concat(e.getMostSpecificCause().getMessage())));

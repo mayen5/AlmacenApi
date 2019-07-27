@@ -121,7 +121,7 @@ public class ProveedorRestController {
             update.setDireccion(proveedor.getDireccion());
             update.setPaginaWeb(proveedor.getPaginaWeb());
             update.setContactoPrincipal(proveedor.getContactoPrincipal());
-            proveedorUpdate = this.proveedorService.save(proveedor);
+            proveedorUpdate = this.proveedorService.save(update);
         }catch (DataAccessException e){
             response.put("mensaje", "Error al actualizar los datos");
             response.put("error", e.getMessage().concat(": ".concat(e.getMostSpecificCause().getMessage())));

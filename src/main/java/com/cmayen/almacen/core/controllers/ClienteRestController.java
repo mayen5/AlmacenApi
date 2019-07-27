@@ -119,7 +119,7 @@ public class ClienteRestController {
             update.setDpi(cliente.getDpi());
             update.setNombre(cliente.getNombre());
             update.setDireccion(cliente.getDireccion());
-            clienteUpdate = this.clienteService.save(cliente);
+            clienteUpdate = this.clienteService.save(update);
         }catch (DataAccessException e){
             response.put("mensaje", "Error al actualizar los datos");
             response.put("error", e.getMessage().concat(": ".concat(e.getMostSpecificCause().getMessage())));

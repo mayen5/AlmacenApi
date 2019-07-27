@@ -119,7 +119,7 @@ public class FacturaRestController {
             update.setCliente(factura.getCliente());
             update.setFecha(factura.getFecha());
             update.setTotal(factura.getTotal());
-            facturaUpdate = this.facturaService.save(factura);
+            facturaUpdate = this.facturaService.save(update);
         }catch (DataAccessException e){
             response.put("mensaje", "Error al actualizar los datos");
             response.put("error", e.getMessage().concat(": ".concat(e.getMostSpecificCause().getMessage())));

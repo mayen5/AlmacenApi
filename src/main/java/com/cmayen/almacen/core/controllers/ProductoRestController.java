@@ -124,7 +124,7 @@ public class ProductoRestController {
             update.setPrecioPorMayor(producto.getPrecioPorMayor());
             update.setExistencia(producto.getExistencia());
             update.setImagen(producto.getImagen());
-            productoUpdate = this.productoService.save(producto);
+            productoUpdate = this.productoService.save(update);
         }catch (DataAccessException e){
             response.put("mensaje", "Error al actualizar los datos");
             response.put("error", e.getMessage().concat(": ".concat(e.getMostSpecificCause().getMessage())));

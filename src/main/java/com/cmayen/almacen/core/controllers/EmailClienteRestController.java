@@ -118,7 +118,7 @@ public class EmailClienteRestController {
         try {
             update.setEmail(emailCliente.getEmail());
             update.setCliente(emailCliente.getCliente());
-            emailClienteUpdate = this.emailClienteService.save(emailCliente);
+            emailClienteUpdate = this.emailClienteService.save(update);
         }catch (DataAccessException e){
             response.put("mensaje", "Error al actualizar los datos");
             response.put("error", e.getMessage().concat(": ".concat(e.getMostSpecificCause().getMessage())));

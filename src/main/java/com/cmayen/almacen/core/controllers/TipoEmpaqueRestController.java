@@ -118,7 +118,7 @@ public class TipoEmpaqueRestController {
 
         try {
             update.setDescripcion(tipoEmpaque.getDescripcion());
-            tipoEmpaqueUpdate = this.tipoEmpaqueService.save(tipoEmpaque);
+            tipoEmpaqueUpdate = this.tipoEmpaqueService.save(update);
         }catch (DataAccessException e){
             response.put("mensaje", "Error al actualizar los datos");
             response.put("error", e.getMessage().concat(": ".concat(e.getMostSpecificCause().getMessage())));

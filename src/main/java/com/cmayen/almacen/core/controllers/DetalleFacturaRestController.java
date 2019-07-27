@@ -121,7 +121,7 @@ public class DetalleFacturaRestController {
             update.setCantidad(detalleFactura.getCantidad());
             update.setPrecio(detalleFactura.getPrecio());
             update.setDescuento(detalleFactura.getDescuento());
-            detalleFacturaUpdate = this.detalleFacturaService.save(detalleFactura);
+            detalleFacturaUpdate = this.detalleFacturaService.save(update);
         }catch (DataAccessException e){
             response.put("mensaje", "Error al actualizar los datos");
             response.put("error", e.getMessage().concat(": ".concat(e.getMostSpecificCause().getMessage())));

@@ -117,7 +117,7 @@ public class CategoriaRestController {
 
         try {
             update.setDescripcion(categoria.getDescripcion());
-            categoriaUpdate = this.categoriaService.save(categoria);
+            categoriaUpdate = this.categoriaService.save(update);
         }catch (DataAccessException e){
             response.put("mensaje", "Error al actualizar los datos");
             response.put("error", e.getMessage().concat(": ".concat(e.getMostSpecificCause().getMessage())));
