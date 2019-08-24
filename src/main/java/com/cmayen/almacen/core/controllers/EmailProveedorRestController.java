@@ -24,6 +24,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/v1")
 @Api(tags = "emailproveedores")
+@CrossOrigin(origins = {"*"})
 public class EmailProveedorRestController {
 
     private final IEmailProveedorService emailProveedorService;

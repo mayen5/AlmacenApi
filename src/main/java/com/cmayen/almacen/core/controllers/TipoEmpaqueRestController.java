@@ -25,6 +25,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/v1")
 @Api(tags = "tiposempaque")
+@CrossOrigin(origins = {"*"})
 public class TipoEmpaqueRestController {
 
     private final ITipoEmpaqueService tipoEmpaqueService;

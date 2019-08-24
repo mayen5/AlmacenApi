@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/CategoriaRestController.java" line="43" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/CategoriaRestController.java" line="44" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56a01d70-8d70-4de7-8bb5-108831ee6b29" name="Default Changelist" comment="">
@@ -34,66 +34,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/TelefonoProveedorRestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="121" column="79" selection-start-line="121" selection-start-column="79" selection-end-line="121" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1542#1543#0" expanded="true" />
-                <element signature="e#1604#1605#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/TipoEmpaqueRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="120" column="67" selection-start-line="120" selection-start-column="67" selection-end-line="120" selection-end-column="67" />
+            <state relative-caret-position="459">
+              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1451#1452#0" expanded="true" />
                 <element signature="e#1507#1508#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/auth/AuthorizationServerConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="55" lean-forward="true" selection-start-line="23" selection-end-line="66" />
-              <folding>
-                <element signature="e#2750#2751#0" expanded="true" />
-                <element signature="e#2814#2815#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/auth/SpringSecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/auth/ResourceServerConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -221,8 +170,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/EmailClienteRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/EmailProveedorRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/FacturaRestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/InventarioRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/ProductoRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/InventarioRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/ProveedorRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/TelefonoClienteRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/TelefonoProveedorRestController.java" />
@@ -251,8 +200,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="width" value="1349" />
+    <option name="height" value="690" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -262,6 +211,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -354,7 +304,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -365,8 +314,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -404,7 +357,10 @@
       <workItem from="1559960789212" duration="18281000" />
       <workItem from="1560627219671" duration="34661000" />
       <workItem from="1562722972783" duration="26274000" />
-      <workItem from="1563644074653" duration="3128000" />
+      <workItem from="1563644074653" duration="4591000" />
+      <workItem from="1566077904911" duration="164000" />
+      <workItem from="1566078105682" duration="2243000" />
+      <workItem from="1566677550592" duration="238000" />
     </task>
     <task id="LOCAL-00001" summary="CategoriaController pageable Added">
       <created>1560027915466</created>
@@ -448,11 +404,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562990810463</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update Controllers method update">
+      <created>1564254796629</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1564254796629</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91436000" />
+    <option name="totallyTimeSpent" value="95544000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -464,10 +427,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2771812" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -515,7 +478,8 @@
     <MESSAGE value="Add Entities and InterfaceServices" />
     <MESSAGE value="Add ServicesImpl to the project" />
     <MESSAGE value="Add RestControllers to the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add RestControllers to the project" />
+    <MESSAGE value="Update Controllers method update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Controllers method update" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/models/services/DetalleFacturaServiceImpl.java">
@@ -694,13 +658,7 @@
         <state relative-caret-position="-595" />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/AlmacenApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -860,16 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/CategoriaRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="106" column="43" selection-start-line="106" selection-start-column="43" selection-end-line="106" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/models/entity/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -921,10 +869,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/auth/AuthorizationServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="69" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
+          <folding>
+            <element signature="e#2750#2751#0" expanded="true" />
+            <element signature="e#2814#2815#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/auth/SpringSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/auth/ResourceServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="69" lean-forward="true" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/ClienteRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="117" column="13" lean-forward="true" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
+        <state relative-caret-position="425">
+          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/CategoriaRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -933,8 +922,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/CompraRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="122" column="57" selection-start-line="122" selection-start-column="57" selection-end-line="122" selection-end-column="57" />
+        <state relative-caret-position="273">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1074#1075#0" expanded="true" />
@@ -947,8 +936,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/DetalleCompraRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="122" column="71" selection-start-line="122" selection-start-column="71" selection-end-line="122" selection-end-column="71" />
+        <state relative-caret-position="212">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -957,8 +946,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/DetalleFacturaRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="123" column="73" selection-start-line="123" selection-start-column="73" selection-end-line="123" selection-end-column="73" />
+        <state relative-caret-position="246">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1490#1491#0" expanded="true" />
@@ -969,8 +958,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/EmailClienteRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="120" column="69" selection-start-line="120" selection-start-column="69" selection-end-line="120" selection-end-column="69" />
+        <state relative-caret-position="188">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -979,8 +968,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/EmailProveedorRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="120" column="73" selection-start-line="120" selection-start-column="73" selection-end-line="120" selection-end-column="73" />
+        <state relative-caret-position="136">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1494#1495#0" expanded="true" />
@@ -991,8 +980,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/FacturaRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="121" column="59" selection-start-line="121" selection-start-column="59" selection-end-line="121" selection-end-column="59" />
+        <state relative-caret-position="206">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1083#1084#0" expanded="true" />
@@ -1003,22 +992,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/InventarioRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="124" column="65" selection-start-line="124" selection-start-column="65" selection-end-line="124" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1422#1423#0" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/ProductoRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="126" column="61" selection-start-line="126" selection-start-column="61" selection-end-line="126" selection-end-column="61" />
+        <state relative-caret-position="184">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1092#1093#0" expanded="true" />
@@ -1029,10 +1006,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/InventarioRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1422#1423#0" expanded="true" />
+            <element signature="e#1477#1478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/ProveedorRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="123" column="63" selection-start-line="123" selection-start-column="63" selection-end-line="123" selection-end-column="63" />
+        <state relative-caret-position="442">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1041,8 +1030,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/TelefonoClienteRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="121" column="75" selection-start-line="121" selection-start-column="75" selection-end-line="121" selection-end-column="75" />
+        <state relative-caret-position="216">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1506#1507#0" expanded="true" />
@@ -1053,8 +1042,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/TelefonoProveedorRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="121" column="79" selection-start-line="121" selection-start-column="79" selection-end-line="121" selection-end-column="79" />
+        <state relative-caret-position="442">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1542#1543#0" expanded="true" />
@@ -1065,8 +1054,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/controllers/TipoEmpaqueRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="120" column="67" selection-start-line="120" selection-start-column="67" selection-end-line="120" selection-end-column="67" />
+        <state relative-caret-position="459">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1451#1452#0" expanded="true" />
@@ -1075,36 +1064,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/auth/AuthorizationServerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="55" lean-forward="true" selection-start-line="23" selection-end-line="66" />
-          <folding>
-            <element signature="e#2750#2751#0" expanded="true" />
-            <element signature="e#2814#2815#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/auth/SpringSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmayen/almacen/core/auth/ResourceServerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

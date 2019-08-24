@@ -24,6 +24,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/v1")
 @Api(tags = "detallefacturas")
+@CrossOrigin(origins = {"*"})
 public class DetalleFacturaRestController {
 
     private final IDetalleFacturaService detalleFacturaService;
